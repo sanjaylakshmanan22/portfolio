@@ -160,7 +160,7 @@ header > nav{
         padding-right: 30px;
     }
 }
-@media (max-width:600px){
+@media (max-width:576px){
     header > nav{
         display: none;
     }
@@ -175,7 +175,7 @@ header > nav{
         column-gap: 0;
     }
 }
-@media (min-width:600px){
+@media (min-width:576px){
     .dropdown-menu{
         display: none;
     }
