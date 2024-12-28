@@ -16,6 +16,7 @@ body{
     color: #fff;
 }
 
+
 .container{
     height: 100vh;
     width: 100vw;
@@ -336,6 +337,7 @@ section{
     height: 35vh;
 }
 .project-container div div{
+    color: white;
     font-size: 2rem;
     margin: 1rem auto;
 }
