@@ -139,17 +139,27 @@ section {
     max-width: 750px;
 }
 
-.home-img img {
+.home-img {
     width: 28vw;
+    height: 28vw;
     max-width: 400px;
     max-height: 400px;
     border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    margin-top: 2rem;
+    overflow: hidden;
     box-shadow: 0 0 2rem rgba(89, 130, 244, 0.5);
     animation: floatImage 4s ease-in-out infinite;
     border: 0.5rem solid #5982f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 @keyframes floatImage {
@@ -264,6 +274,7 @@ section {
 
 .project-card {
     background-color: #262840;
+    padding: 1.5rem;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
@@ -463,10 +474,16 @@ section {
         font-size: 2.8rem;
     }
 
-    .home-img img {
+    .home-img {
         width: 60vw;
+        height: 60vw;
         max-width: 300px;
+        max-height: 300px;
         margin-top: 4rem;
+    }
+
+    .home-img img { /* This specific rule was missing for mobile */
+        border-radius: 50%; /* Ensure it's explicitly set here too */
     }
 
     .social-media {
@@ -530,8 +547,13 @@ section {
         font-size: 2.4rem;
     }
 
-    .home-img img {
+    .home-img {
         width: 70vw;
+        height: 70vw;
+    }
+
+    .home-img img { /* This specific rule was missing for very small mobile */
+        border-radius: 50%; /* Ensure it's explicitly set here too */
     }
 
     .heading {
