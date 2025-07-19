@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Sanjay Lakshmanan | Web Developer Portfolio</title>
+    <link rel="icon" href="https://placehold.co/32x32/5982f4/ffffff?text=SL" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Sanjay Lakshmanan - A passionate Web Developer with expertise in Front-end, Back-end, Java, SQL, Node.js, Express.js, and Git/GitHub development, creating responsive, user-friendly, and visually appealing web experiences.">
+    <meta name="keywords" content="Sanjay Lakshmanan, Web Developer, Front-end, Back-end, Java, HTML, CSS, JavaScript, SQL, Node.js, Express.js, Git, GitHub, Portfolio">
+    <meta name="author" content="Sanjay Lakshmanan">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_GITHUB_PAGES_URL_HERE">
+    <meta property="og:title" content="Sanjay Lakshmanan | Web Developer Portfolio">
+    <meta property="og:description" content="Sanjay Lakshmanan - A passionate Web Developer with expertise in Front-end, Back-end, Java, SQL, Node.js, Express.js, and Git/GitHub development, creating responsive, user-friendly, and visually appealing web experiences.">
+    <meta property="og:image" content="https://placehold.co/1200x630/5982f4/ffffff?text=Sanjay+Portfolio">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="YOUR_GITHUB_PAGES_URL_HERE">
+    <meta property="twitter:title" content="Sanjay Lakshmanan | Web Developer Portfolio">
+    <meta property="twitter:description" content="Sanjay Lakshmanan - A passionate Web Developer with expertise in Front-end, Back-end, Java, SQL, Node.js, Express.js, and Git/GitHub development, creating responsive, user-friendly, and visually appealing web experiences.">
+    <meta property="twitter:image" content="https://placehold.co/1200x675/5982f4/ffffff?text=Sanjay+Portfolio">
+
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    xintegrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -16,109 +38,139 @@
             <a href="#" class="logo">Portfolio</a>
 
             <i class="fa-solid fa-bars" id="menu-icon"></i>
-            
+
             <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#skill">Skill</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#skill">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
         </header>
-        
-        <section class="home" id="home">
-            <div class="home-content">
-                <h3>Hi,Myself</h3>
-                <h1>Sanjay</h1>
-                <h3>And I'm a <span>Web Developer</span></h3>
-                <p>I am a passionate Web Developer with expertise in both front-end and back-end development</p>
-                <p>dedicated to creating seamless, user-friendly, and visually appealing web experiences. With a solid foundation in HTML, CSS, and JavaScript</p>
-                <p>I craft responsive, high-performance websites that function flawlessly across all devices.</p>
-                <div class="social-media">
-                    <a href="https://wa.me/9786983031" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/sanjay-lakshmanan-685659262" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/sanjaylakshmanan22" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/_sanjay__12__" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <a href="./Sanjay resume.pdf" target="_blank" class="btn">Download CV</a>
+
+        <main>
+            <section class="home" id="home">
+                <div class="home-content">
+                    <h3>Hi, I'm</h3>
+                    <h1>Sanjay</h1>
+                    <h3>And I'm a <span class="text-typing"></span><span class="cursor">|</span></h3>
+                    <p>As a passionate Web Developer, I build seamless, user-friendly, and visually stunning web experiences. My expertise in HTML, CSS, and JavaScript, combined with a strong understanding of both front-end and back-end principles, allows me to craft responsive and high-performance websites that deliver exceptional user experiences across all devices.</p>
+                    <div class="social-media">
+                        <a href="https://wa.me/9786983031" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/sanjay-lakshmanan-685659262" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sanjaylakshmanan22" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_sanjay__12__" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./Sanjay resume.pdf" target="_blank" class="btn">Download CV</a>
                 </div>
                 <div class="home-img">
-                <img src="./image/my-image.jpeg" alt="">
-            </div>
-        </section>
-    
-        <section class="skill" id="skill">
-            <h2 class="heading">Skills</h2>
-            <div class="name-bar">
-                <div class="skill-name">
-                    <div class="skill-name">HTML</div>
-                    <div class="skill-name">CSS</div>
-                    <div class="skill-name">JAVASCRIPT</div>
-                    <div class="skill-name">PYTHON</div>
+                    <img src="./image/profile.jpg" alt="Sanjay Lakshmanan, Web Developer Portrait">
                 </div>
-                <div class="completion-bar">
-                    <div class="html">
-                        <div class="percentage"></div>
-                    </div>
-                    <div class="css">
-                        <div class="percentage"></div>
-                    </div>
-                    <div class="javascript">
-                        <div class="percentage"></div>
-                    </div>
-                    <div class="python">
-                        <div class="percentage"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="projects" id="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="project-container">
-                <a href="https://sanjaylakshmanan22.github.io/youtube/" target="_blank">
-                    <div>
-                        <img src="./image/youtube.jpeg" alt="">
-                        <div>Youtube clone</div>
+            <section class="skill" id="skill">
+                <h2 class="heading">My <span>Skills</span></h2>
+                <div class="skill-cards-container">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Proficiency: <span>85%</span></p>
                     </div>
-                </a>
-                <div>
-                    <img src="./image/amazon.jpeg" alt="">
-                    <div>E-commerce site</div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Proficiency: <span>80%</span></p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Proficiency: <span>60%</span></p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-java"></i>
+                        <h3>Java</h3>
+                        <p>Proficiency: <span>70%</span></p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>SQL</h3>
+                        <p>Proficiency: <span>75%</span></p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h3>Node.js</h3>
+                        <p>Proficiency: <span>65%</span></p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Express.js</h3>
+                        <p>Proficiency: <span>60%</span></p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Proficiency: <span>80%</span></p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact<span>Me</span></h2>
-
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+            <section class="projects" id="projects">
+                <h2 class="heading">My <span>Projects</span></h2>
+                <div class="project-container">
+                    <a href="https://sanjaylakshmanan22.github.io/youtube/" target="_blank" class="project-card">
+                        <div>
+                            <img src="./image/youtube.jpeg" alt="Screenshot of YouTube clone project">
+                            <h3>Youtube Clone</h3>
+                            <p>A responsive front-end clone of YouTube, built with HTML, CSS, and JavaScript, demonstrating video embedding and layout design.</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/sanjaylakshmanan22/Amazon-clone" target="_blank" class="project-card">
+                        <div>
+                            <img src="./image/amazon.jpeg" alt="Screenshot of E-commerce site project">
+                            <h3>E-commerce Site (Frontend)</h3>
+                            <p>A modern e-commerce platform interface, showcasing product listings, cart functionality, and responsive design for various devices.</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/sanjaylakshmanan22/servesmile" target="_blank" class="project-card">
+                        <div>
+                            <img src="./image/servesmile.png" alt="Screenshot of Serve Smile project">
+                            <h3>Serve Smile</h3>
+                            <p>A platform for food and fund donations, connecting donors with those in need to facilitate charitable contributions.</p>
+                        </div>
+                    </a>
                 </div>
+            </section>
 
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
-        </section>
+            <section class="contact" id="contact">
+                <h2 class="heading">Contact<span>Me</span></h2>
+
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdA19ri7ZgiOtyAfODQ4CLIdYttWqMN4ceWMpAJFHVY7JQ7XA/formResponse" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="entry.59618185" placeholder="Full Name" required>
+                        <input type="email" name="entry.1086263477" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="tel" name="entry.1921172105" placeholder="Mobile Number" required>
+                        <input type="text" name="entry.435782120" placeholder="Email Subject" required>
+                    </div>
+                    <textarea name="entry.824465718" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </section>
+        </main>
 
         <footer class="footer">
             <div class="footer-text">
                 <p>Copyright &copy; 2024 by @sanjay | All Rights Reserved.</p>
             </div>
-    
+
             <div class="footer-iconTop">
-                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+                <a href="#home" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></a>
             </div>
         </footer>
 
     </div>
 
-        
-        <script src="./index.js"></script>
-    </body>
+    <script src="./index.js"></script>
+</body>
 </html>
