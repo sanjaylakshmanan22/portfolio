@@ -139,18 +139,31 @@ section {
     max-width: 750px;
 }
 
-.home-img img {
-    width: 28vw;
-    max-width: 400px;
-    max-height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    margin-top: 2rem;
+/* --- CRITICAL STYLES FOR CIRCULAR IMAGE --- */
+.home-img {
+    width: 28vw; /* Responsive width for the container */
+    height: 28vw; /* Match height to width to ensure a perfect square container */
+    max-width: 400px; /* Max size for desktop */
+    max-height: 400px; /* Max size for desktop */
+    border-radius: 50%; /* Makes the square container a circle */
+    overflow: hidden; /* Hides any part of the image that extends beyond the circle */
     box-shadow: 0 0 2rem rgba(89, 130, 244, 0.5);
     animation: floatImage 4s ease-in-out infinite;
     border: 0.5rem solid #5982f4;
+    display: flex; /* Use flexbox to center the image within the container */
+    justify-content: center;
+    align-items: center;
 }
+
+.home-img img {
+    width: 100%; /* Make the image fill the square container */
+    height: 100%; /* Make the image fill the square container */
+    object-fit: cover; /* Ensures the image covers the entire area, cropping if necessary */
+    border-radius: 50%; /* Apply border-radius to the image itself as well, for extra certainty */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+/* --- END CRITICAL STYLES FOR CIRCULAR IMAGE --- */
+
 
 @keyframes floatImage {
     0% {
@@ -463,11 +476,19 @@ section {
         font-size: 2.8rem;
     }
 
-    .home-img img {
+    /* --- CRITICAL STYLES FOR CIRCULAR IMAGE (MOBILE) --- */
+    .home-img {
         width: 60vw;
+        height: 60vw;
         max-width: 300px;
+        max-height: 300px;
         margin-top: 4rem;
     }
+
+    .home-img img {
+        border-radius: 50%;
+    }
+    /* --- END CRITICAL STYLES FOR CIRCULAR IMAGE (MOBILE) --- */
 
     .social-media {
         justify-content: center;
@@ -530,9 +551,16 @@ section {
         font-size: 2.4rem;
     }
 
-    .home-img img {
+    /* --- CRITICAL STYLES FOR CIRCULAR IMAGE (VERY SMALL MOBILE) --- */
+    .home-img {
         width: 70vw;
+        height: 70vw;
     }
+
+    .home-img img {
+        border-radius: 50%;
+    }
+    /* --- END CRITICAL STYLES FOR CIRCULAR IMAGE (VERY SMALL MOBILE) --- */
 
     .heading {
         font-size: 3.5rem;
