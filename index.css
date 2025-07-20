@@ -139,23 +139,25 @@ section {
     max-width: 750px;
 }
 
-/* --- CRITICAL STYLES FOR CIRCULAR IMAGE --- */
+/* --- CRITICAL STYLES FOR CIRCULAR IMAGE (UPDATED) --- */
 .home-img {
+    position: relative; /* Needed for absolute positioning of img */
     width: 28vw; /* Responsive width for the container */
-    height: 28vw; /* Match height to width to ensure a perfect square container */
-    max-width: 400px; /* Max size for desktop */
-    max-height: 400px; /* Max size for desktop */
+    padding-bottom: 28vw; /* This makes the height equal to the width, creating a perfect square */
+    max-width: 400px; /* Max width for desktop */
+    max-height: 400px; /* Max height for desktop */
     border-radius: 50%; /* Makes the square container a circle */
     overflow: hidden; /* Hides any part of the image that extends beyond the circle */
     box-shadow: 0 0 2rem rgba(89, 130, 244, 0.5);
     animation: floatImage 4s ease-in-out infinite;
     border: 0.5rem solid #5982f4;
-    display: flex; /* Use flexbox to center the image within the container */
-    justify-content: center;
-    align-items: center;
+    /* Removed display: flex, justify-content, align-items as img will be absolutely positioned */
 }
 
 .home-img img {
+    position: absolute; /* Position the image absolutely within its square parent */
+    top: 0;
+    left: 0;
     width: 100%; /* Make the image fill the square container */
     height: 100%; /* Make the image fill the square container */
     object-fit: cover; /* Ensures the image covers the entire area, cropping if necessary */
@@ -478,14 +480,22 @@ section {
 
     /* --- CRITICAL STYLES FOR CIRCULAR IMAGE (MOBILE) --- */
     .home-img {
+        position: relative; /* Added for padding-bottom trick */
         width: 60vw;
-        height: 60vw;
+        padding-bottom: 60vw; /* Forces height to be equal to width */
         max-width: 300px;
         max-height: 300px;
         margin-top: 4rem;
+        /* Keep other styles like border-radius, overflow, etc. */
     }
 
     .home-img img {
+        position: absolute; /* Added for padding-bottom trick */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         border-radius: 50%;
     }
     /* --- END CRITICAL STYLES FOR CIRCULAR IMAGE (MOBILE) --- */
@@ -554,7 +564,7 @@ section {
     /* --- CRITICAL STYLES FOR CIRCULAR IMAGE (VERY SMALL MOBILE) --- */
     .home-img {
         width: 70vw;
-        height: 70vw;
+        padding-bottom: 70vw; /* Forces height to be equal to width */
     }
 
     .home-img img {
